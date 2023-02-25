@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .product-image {
+            float: left;
+            margin-right: 20px;
+        }
+
+        .product-image img {
+            height: 490px;
+            width: 80%;
+        }
+
+        .product-description {
+            float: left;
+            max-width: 40%;
+            margin: 30px;
+        
+        }
+
+        .product-price {
+            font-size: 24px;
+            color: #f00;
+            margin-top: 10px;
+        }
+
+        .product-button {
+            display: inline-block;
+            background-color: #f00;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .product-button:hover {
+            background-color: #a00;
+        }
+
+        #quantity {
+            width: 50px;
+            height: 30px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+        }
+    </style>
+    <title>Hp-pavillion</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Product Page</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="Images/joshua-woroniecki-lzh3hPtJz9c-unsplash.jpg" alt="Product Image">
+        </div>
+        <div class="product-description">
+            <h2 id='name'>HP Laptop 15s-fq2717TU</h2>
+            <p>SCREEN SIZE 35.6 cm</p>
+            <p>COLOUR Natural silver</p>
+            <p>Do Check Partner offer section for Exciting offers from HP; Processor:Intel Core i5-1235U (up to 4.4 GHz
+                with Intel Turbo Boost Technology(2g),12 MB L3 cache, 10 cores, 12 threads)| Memory & Storage: 8 GB
+                DDR4-3200 SDRAM (2 x 4 GB) | Storage: 512 GB PCIe NVMe M.2 SSD</p>
+                <p style="font-size: 20px;">Price - </p>
+            <div class="product-price">40,000
+            </div>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" onchange="updateQuantity()">
+
+           <button onclick="addcart()"> <a href="billing.html" class="product-button">Add to Cart</a></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

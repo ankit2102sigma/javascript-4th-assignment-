@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome</title>
+    <style>body {
+        margin: 0;
+        padding: 0;
+        background-color: white;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text {
+    position: relative;
+    margin: 300px auto 0;
+    width: 750px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    height: 260px;
+    /* background: linear-gradient(0deg, #000, #272727); */
+}
+.text h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+
+
+    
+    </style>
+
+
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="text">
+            <h1 > Thank- You </h1>
+            <div id="name" style="text-align: center;"></div>
+        </div>
+    </div>
+    <script>
+        let name = localStorage.getItem("namep");
+        // let nameP = localStorage.getItem("namep");
+
+        document.getElementById("name").innerHTML = "Your Order of " + "  " + name+ " is Sucessfuly placed " ;
+
+    </script>
+</body>
+
+</html>

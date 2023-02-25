@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* height: 100vh; */
+    }
+
+    /* Style the checkout form */
+    form {
+      background-color: #f8f8f8;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+      max-width: 600px;
+      width: 100%;
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+    }
+
+
+    h2 {
+      margin-top: 30px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"] {
+      width: 90%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+  <title>Billing</title>
+</head>
+
+<body>
+  <h1>Billing Information</h1>
+  <div class="container">
+    <form action="/thank-you.html" id="billing-form" onsubmit="return validateForm()" method="get">
+      <h2>Billing Address</h2>
+      <label for="billing-name">Name:</label>
+      <input type="text" id="billing-name" name="billing-name">
+
+      <label for="billing-address">Address:</label>
+      <input type="text" id="billing-address" name="billing-address">
+
+      <label for="billing-city">City:</label>
+      <input type="text" id="billing-city" name="billing-city">
+
+      <label for="billing-state">State:</label>
+      <input type="text" id="billing-state" name="billing-state">
+
+      <label for="billing-zip">Zip Code:</label>
+      <input type="text" id="billing-zip" name="billing-zip">
+
+      <h2>Postal Address</h2>
+      <label for="copy-address">Same As Billing Address <input type="checkbox" id="copy-address" name="copy-address"
+          value="copy-address"></label>
+
+      <label for="postal-name">Name:</label>
+      <input type="text" id="postal-name" name="postal-name">
+
+      <label for="postal-address">Address:</label>
+      <input type="text" id="postal-address" name="postal-address">
+
+      <label for="postal-city">City:</label>
+      <input type="text" id="postal-city" name="postal-city">
+
+      <label for="postal-state">State:</label>
+      <input type="text" id="postal-state" name="postal-state">
+
+      <label for="postal-zip">Zip Code:</label>
+      <input type="text" id="postal-zip" name="postal-zip">
+
+      <button type="submit" value="Submit">Place Order</button>
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
