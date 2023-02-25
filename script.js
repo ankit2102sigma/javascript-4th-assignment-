@@ -53,72 +53,73 @@ copyAddressCheckbox.addEventListener('change', () => {
 })
 
 function validateForm() {
-    const billingNameInput = document.getElementById('billing-name');
-    const billingAddressInput = document.getElementById('billing-address');
-    const billingCityInput = document.getElementById('billing-city');
-    const billingStateInput = document.getElementById('billing-state');
-    const billingZipInput = document.getElementById('billing-zip');
+//   alert("call")
+    const billingNameInput1 = document.getElementById('billing-name');
+    const billingAddressInput1 = document.getElementById('billing-address');
+    const billingCityInput1 = document.getElementById('billing-city');
+    const billingStateInput1 = document.getElementById('billing-state');
+    const billingZipInput1 = document.getElementById('billing-zip');
 
-    const postalNameInput = document.getElementById('postal-name');
-    const postalAddressInput = document.getElementById('postal-address');
-    const postalCityInput = document.getElementById('postal-city');
-    const postalStateInput = document.getElementById('postal-state');
-    const postalZipInput = document.getElementById('postal-zip');
-    console.log("test")
+    const postalNameInput1 = document.getElementById('postal-name');
+    const postalAddressInput1 = document.getElementById('postal-address');
+    const postalCityInput1 = document.getElementById('postal-city');
+    const postalStateInput1 = document.getElementById('postal-state');
+    const postalZipInput1 = document.getElementById('postal-zip');
+    console.log("test", billingNameInput)
 
     
-    if (billingNameInput == null || billingNameInput == "") {
+    if (billingNameInput1 == null || billingNameInput1 == "") {
         alert("Billing Name can't be blank");
         return false;
     }
-    else if (postalNameInput == null || postalNameInput == "") {
+    else if (postalNameInput1 == null || postalNameInput1 == "") {
         alert("Postal Name can't be blank");
         return false;
     }
-    else if (billingAddressInput == null || billingAddressInput == "") {
+    else if (billingAddressInput1 == null || billingAddressInput1 == "") {
         alert(" Biiling Address can't be blank");
         return false;
     }
-    else if (billingCityInput == null || billingCityInput == "") {
+    else if (billingCityInput1 == null || billingCityInput1 == "") {
         alert("Billing city can't be blank");
         return false;
     }
-    else if (billingStateInput == null || billingStateInput == "") {
+    else if (billingStateInput1 == null || billingStateInput1 == "") {
         alert("Billing state can't be blank");
         return false;
     }
-    else if (billingZipInput == null || billingZipInput == "") {
+    else if (billingZipInput1 == null || billingZipInput1 == "") {
         alert("Billing zip code can't be blank");
         return false;
     }
-    else if (postalAddressInput == null || postalAddressInput == "") {
+    else if (postalAddressInput1 == null || postalAddressInput1 == "") {
         alert("Postal Address can't be blank");
         return false;
     }
-    else if (postalCityInput == null || postalCityInput == "") {
+    else if (postalCityInput1 == null || postalCityInput1 == "") {
         alert("Postal city can't be blank");
         return false;
     }
-    else if (postalStateInput == null || postalStateInput == "") {
+    else if (postalStateInput1 == null || postalStateInput1 == "") {
         alert("Postal state can't be blank");
         return false;
     }
-    else if (postalZipInput == null || postalZipInput == "") {
+    else if (postalZipInput1 == null || postalZipInput1 == "") {
         alert("Postal zip code can't be blank");
         return false;
     }
-    else if (postalZipInput.length<5 || postalZipInput.length>7) {
+    else if (postalZipInput1.length<5 || postalZipInput1.length>7) {
         alert("Invalid Postal Zip Code given.");
         return false;
     }
-    else if (billingZipInput.length<5 || billingZipInput.length>7) {
+    else if (billingZipInput1.length<5 || billingZipInput1.length>7) {
         alert("Invalid Billing Zip Code given.");
         return false;
     }
 
     else{
-        
-        Save();
+        // alert("calling")
+        save();
     }
 
 
